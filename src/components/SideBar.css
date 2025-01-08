@@ -1,0 +1,72 @@
+.bar {
+    position: relative;
+    transform: translateY(1%);
+    width: 3%;
+    height: 79vh;
+    background-color: rgb(250, 250, 250);
+    left: 0.5%;
+    transition: width 0.3s ease;
+}
+
+.barOpen {
+    width: 15vw; 
+}
+
+.barIcon {
+    position: absolute;
+    top: 45%;
+    height: 3vh;
+    width: 3vw;
+}
+
+.barToggle {
+    position: absolute;
+    top: 45%;
+    right: 3vw;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.sidebarContent {
+    padding: 2vh;
+    font-size: 1.5vw;
+    color: black;
+}
+
+.searchBar {
+    position: absolute;
+    top: 5%; 
+    left: 16%; 
+    width: 65%; 
+    padding: 1vh;
+    font-size: 1.3rem;
+    border: 0.1vw solid #ccc;
+    box-sizing: border-box; 
+}
+
+.sidebarLinks {
+    position: absolute;
+    top: 15%; 
+    left: 20%; 
+    display: flex;
+    flex-direction: column;
+    gap: 2vh; 
+}
+
+.sidebarLink {
+    display: inline-block;
+    font-size: 1.7rem; 
+    text-decoration: none;
+    color: black;
+    padding: 0.5vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap; 
+}
+
+.sidebarLink:hover {
+    background-color: rgba(157, 9, 207, 0.1);
+    color: rgb(157, 9, 207);
+    border-radius: 5px;
+}
+
+

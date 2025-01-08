@@ -1,0 +1,191 @@
+.level-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.description {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 8px;
+    font-family: 'Lato', sans-serif;
+    top: 50vh;
+}
+
+/* Parni indeksi - roza pozadina */
+.pink-background {
+    background-color: rgb(249, 232, 250);
+}
+
+/* Neparni indeksi - bijela pozadina */
+.white-background {
+    background-color: #fff;
+}
+
+/* Kontejner za elemente unutar boxa */
+.levelContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrirano unutar kontejnera */
+    align-items: center;
+    width: 38vw;
+    height: 60vh;
+}
+
+.leftSide {
+    right: 1%;
+}
+
+.rightSide {
+    left: 60%;
+}
+
+/* Stil za ime levela */
+.levelName {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Stil za godine */
+.levelYears {
+    font-size: 1.6rem;
+    color: #666;
+}
+
+/* Stil za ikone */
+.levelIcon {
+    width: 30%;
+    margin: 1rem 0;
+}
+
+/* Stil za zvjezdice */
+.levelStars {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.levelStar {
+    height: 3vh;
+    width: 3vh;
+    color: #cbcb2c;
+}
+
+/* Kontejner za vještine */
+.skills-container {
+    position: absolute;
+    top: 13%;
+    width: 17%;
+    height: 70%;
+    padding: 1rem;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+.skills-list {
+    position: relative;
+    list-style: none; /* Uklanja defaultne stilove liste */
+    text-align: center; /* Centriranje liste */
+    right: 8%;
+}
+
+.skills-item {
+    display: flex; /* Postavlja kružić i tekst u liniju */
+    align-items: center; /* Vertikalno centriranje kružića i teksta */
+    justify-content: center; /* Horizontalno centriranje unutar stavke liste */
+    gap: 0.5rem; /* Razmak između kružića i teksta */
+    font-size: 1.6rem;
+    color: #050505;
+    margin-bottom: 0.5rem;
+}
+
+.skills-item::before {
+    content: '○'; /* Simbol praznog kružića (prsten) */
+    font-size: 1.7rem; /* Veličina kružića */
+    color: #333; /* Boja kružića */
+}
+
+/* Kontejner za certifikate */
+.certificates-container {
+    position: absolute;
+    top: 13%;
+    width: 17%;
+    height: 70%;
+    padding: 1rem;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certificates-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+.certificates-list {
+    position: relative;
+    list-style: none; /* Uklanja defaultne stilove liste */
+    text-align: center; /* Centriranje liste */
+    right: 8%;
+}
+
+.certificates-item {
+    display: flex; /* Postavlja kružić i tekst u liniju */
+    align-items: center; /* Vertikalno centriranje kružića i teksta */
+    justify-content: center; /* Horizontalno centriranje unutar stavke liste */
+    gap: 0.5rem; /* Razmak između kružića i teksta */
+    font-size: 1.6rem;
+    color: #050505;
+    margin-bottom: 0.5rem;
+}
+
+.certificates-item::before {
+    content: '○'; /* Simbol praznog kružića (prsten) */
+    font-size: 1.7rem; /* Veličina kružića */
+    color: #333; /* Boja kružića */
+}
+
+.rightCertificates {
+    right: 12%;
+}
+
+.rightSkills {
+    right: 40%;
+}
+
+.leftCertificates {
+    left: 40%;
+}
+
+.leftSkills {
+    left: 10%;
+}
+
+.certificateIcon {
+    position: absolute;
+    width: 4vw;
+    height: 4vh;
+    top: 7%;
+    left: 17%;
+}
+
+.skillIcon {
+    position: absolute;
+    width: 3vw;
+    height: 4vh;
+    top: 7%;
+    left: 22%;
+}
+

@@ -1,0 +1,79 @@
+.sideBox {
+    position: absolute;
+    border: 0.1rem black solid;
+    height: 79vh;
+    width: 17vw;
+    top: 19.5%;
+    left: 0.5%;
+    text-align: center;
+}
+
+/* Pretraga */
+.search-section {
+    margin: 1rem 0;
+}
+
+.search-input {
+    width: 90%;
+    padding: 0.5rem;
+    font-size: 1.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Filtriranje */
+.filter-section {
+    margin: 1rem 0;
+}
+
+.filter-button {
+    width: 90%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    text-align: left;
+}
+
+.filter-button:hover {
+    background-color: #eaeaea;
+}
+
+.filter-options {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.filter-option {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.filter-option:hover {
+    background-color: #f0f0f0;
+}
+
+/* Gumb za filtriranje */
+.filter-apply-button {
+    width: 90%;
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #c027a1;
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.filter-apply-button:hover {
+    background-color: #950077;
+}

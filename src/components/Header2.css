@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+}
+
+.header2 {
+    position: relative;
+    width: 100%;
+    height: 9vh;
+    background-color: rgb(250, 250, 250);
+}
+
+.sideBar {
+    position: absolute;
+    top: 20%;
+    width: 2vw;
+    height: 5vh;
+    left: 1.5%;
+}
+
+.linksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw; /* Razmak između linkova (procenat širine ekrana) */
+    position: relative;
+    top: 1vh; /* Pozicija kontejnera u odnosu na visinu ekrana */
+}
+
+.links {
+    font-size: 1.1vw; /* Veličina fonta kao procenat širine ekrana */
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 2vh 3vw; /* Prostor oko linka relativan veličini ekrana */
+}
+
+.links:hover {
+    color: rgb(157, 9, 207);
+    background-color: rgba(157, 9, 207, 0.1);
+    border-radius: 1vw; /* Lagano zaobljeni rubovi relativni širini ekrana */
+}

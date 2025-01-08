@@ -1,0 +1,110 @@
+.container {
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    width: 30vw; /* Smanjena širina za cijeli niz */
+    max-width: 30vw; /* Maksimalna širina za cijeli niz */
+    top: 45%;
+    left: 13%;
+}
+
+.arrow-steps {
+    position: absolute;
+    display: flex;
+    justify-content: space-between; /* Ravnomjerno raspoređeni koraci */
+    align-items: center;
+    width: 60%; /* Koristi cijeli prostor */
+    gap: 0.4vw; /* Razmak između koraka */
+    left: 4%;
+    top: 19%;
+}
+
+.arrow-steps .step {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff; /* Bijeli tekst */
+    cursor: default;
+    padding: 2.2vh 1.5vw; /* Povećano relativno odstojanje */
+    min-width: 15vw; /* Minimalna širina */
+    flex-grow: 1; /* Omogućuje da koraci rastu proporcionalno */
+    position: relative;
+    background-color: #dca8e9; /* Ljubičasta */
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.arrow-steps .step:nth-child(2) {
+    background-color: #c874d9; /* Srednja ljubičasta */
+}
+
+.arrow-steps .step:nth-child(3) {
+    background-color: #b348c6; /* Tamnija ljubičasta */
+}
+
+.arrow-steps .step.last {
+    background-color: #8b1aa8;
+}
+
+.arrow-steps  .step.current {
+    background-color: #dca8e9;
+}
+
+.arrow-steps .step.step.current:after {
+    border-left-color: #dca8e9;
+}
+
+.arrow-steps .step:after,
+.arrow-steps .step:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -2.5vw; /* Širina trokuta */
+    width: 0;
+    height: 0;
+    border-top: 3.1vh solid transparent; /* Veća visina trokuta */
+    border-bottom: 4vh solid transparent;
+    border-left: 2.5vw solid #dca8e9;
+    z-index: 2;
+    transition: border-color 0.2s ease;
+}
+
+.arrow-steps .step:nth-child(2):after {
+    border-left-color: #c874d9; /* Prilagodba trokuta za drugi korak */
+}
+
+.arrow-steps .step:nth-child(3):after {
+    border-left-color: #b348c6;
+}
+
+.arrow-steps .step.last:after {
+    content: none; /* Uklanja desni trokut za posljednji korak */
+}
+
+/* Lijevi trokut na pravokutnicima */
+.arrow-steps .step:before {
+    right: auto;
+    left: 0;
+    border-left: 2.5vw solid #fff; /* Bijeli trokut na lijevoj strani */
+    border-top: 3.1vh solid transparent;
+    border-bottom: 4vh solid transparent;
+    z-index: 0;
+}
+
+.arrow-steps .step.current:before {
+    border-left: none; /* Uklanja lijevi trokut za prvi korak */
+}
+
+/* Prilagodba za zvjezdice */
+.arrow-steps .stars {
+    display: flex;
+    justify-content: center;
+    gap: 0.3vw; /* Razmak između zvjezdica */
+    margin-bottom: 19vh; /* Razmak između zvjezdica i pravokutnika */
+}
+
+.star {
+    position: relative;
+    top: 16vh;
+    height: 4vh;
+    width: 4vh; /* Smanjena širina zvjezdica kako bi se lakše prilagodile */
+    color: #dede3b;
+}

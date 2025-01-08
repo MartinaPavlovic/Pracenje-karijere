@@ -1,0 +1,26 @@
+.entryImage {
+    margin-left: 26%;
+    width: 45%;
+    height: auto;
+}
+
+.loginButton {
+    background-color: rgb(157, 9, 207);
+    width: 12%;
+    height: 5vh;
+    text-align: center;
+    font-size: 4vh;
+    margin-left: 42%;
+    margin-top: 3%;
+    color: white;
+    text-decoration: none; /* Uklanja podcrtavanje */
+    display: inline-block; /* Ponaša se kao blok za centriranje */
+    line-height: 5vh; /* Poravnava tekst vertikalno */
+    border: 2px solid white; /* Dodaje bijeli obrub */
+    border-radius: 8px; /* Zaokruženi rubovi */
+}
+
+.loginButton:hover {
+    background-color: rgb(127, 0, 177); /* Promjena boje na hover */
+    cursor: pointer; /* Ruka pokazivač na hover */
+}

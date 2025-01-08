@@ -1,0 +1,75 @@
+/* Glavni kontejner za listu */
+.list-container {
+    position: absolute;
+    flex-grow: 1;
+    margin-left: 1rem;
+    width: 80%;
+    left: 18%;
+    top: 19.5%;
+}
+
+/* Lista zaposlenika */
+.employee-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+/* Stilovi za box zaposlenika */
+.employee-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    font-size: 150%;
+}
+
+/* Boje za parne i neparne boxove */
+.employee-box.even {
+    background-color: #f0f0f0;
+}
+
+.employee-box.odd {
+    background-color: #fff;
+}
+
+/* Navigacija po stranicama */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.page-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.page-button.active {
+    background-color: #c027a1;
+    color: white;
+    font-weight: bold;
+}
+
+.page-button:hover {
+    background-color: #950077;
+    color: white;
+}
+
+.ellipsis {
+    padding: 0.5rem 1rem;
+    color: #666;
+    font-size: 1rem;
+    user-select: none;
+}
+
+
+
