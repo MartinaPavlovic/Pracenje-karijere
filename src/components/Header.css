@@ -38,6 +38,7 @@ body {
     transform: translateY(-50%); 
     height: 5vh;
     width: 6vw;
+    cursor: pointer;
 }
 
 .notificationBadge {
@@ -54,4 +55,5 @@ body {
     align-items: center;
     font-size: 1vw; 
     font-weight: bold;
+    cursor: pointer;
 }

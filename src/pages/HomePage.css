@@ -1,0 +1,50 @@
+/* Container koji obuhvaća sidebar i komentare */
+.homepageContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/* Komponente SideBar i CommentsList unutar glavnog layouta */
+.bar {
+    flex-shrink: 0; /* Sidebar ne smanjuje svoju širinu */
+    transition: width 0.3s ease; /* Glatka tranzicija */
+}
+
+.commentsContainer {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    transition: margin-left 0.3s ease; /* Komentari se pomiču glatko */
+}
+
+/* Kada je sidebar otvoren */
+.barOpen + .commentsContainer {
+    margin-left: 15vw; /* Komentari se pomiču za širinu otvorenog sidebar-a */
+}
+
+/* Boxevi komentara */
+.commentBox {
+    flex: 1 1 calc(20% - 20px); /* 5 komentara po redu, uz razmak */
+    max-width: calc(20% - 20px);
+    min-width: 200px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.commentDate {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.commentText {
+    font-size: 14px;
+    color: #333;
+}

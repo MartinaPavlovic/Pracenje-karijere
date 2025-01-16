@@ -1,0 +1,123 @@
+.employeeLevel {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nameText {
+    font-size: 5vh;
+    font-style: italic;
+  }
+  
+  .hr1 {
+    width: 30%;
+    margin: 2rem auto;
+  }
+  
+  .levelContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Širina kontejnera */
+    align-items: center;
+    gap: 1.5rem; /* Razmak između razina */
+    position: relative;
+    top: 10vh;
+  }
+  
+  .levelBox {
+    padding: 1rem 2rem;
+    border-radius: 20rem;
+    text-align: center;
+    min-width: 10vw;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .completedLevel {
+    background-color: #28a745;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .clickableLevel {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .levelText {
+    text-align: center;
+  }
+  
+  .checkmark {
+    font-size: 1.6rem;
+    color: chartreuse;
+  }
+  
+  .missingSkillsContainer {
+    margin-top: 1rem;
+    text-align: center;
+    width: 75%; /* Prilagodljiva širina */
+    font-size: 1.7rem;
+  }
+
+  .title {
+    font-weight: bold;
+
+  }
+  
+  .missing-skills-list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dva stupca */
+    gap: 1rem; /* Razmak između stavki */
+    list-style: none;
+    right: 5vw;
+  }
+  
+  .missing-skills-list li {
+    display: flex;
+    font-size: 1.6rem;
+    color: #333;
+    padding: 0.5rem;
+  }
+  
+  .missing-skills-list li::before {
+    content: "○";
+    font-size: 1.5rem;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  .listText {
+    font-size: 2rem;
+    color: blue;
+    font-style: italic;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* Uklanja kružiće iz liste kada je aktivan način prioritizacije */
+.no-bullets {
+    list-style-type: none; /* Uklanja kružiće */
+    padding: 0; /* Uklanja default padding */
+    margin: 0; /* Uklanja default margin */
+  }
+  
+  /* Ostali stilovi */
+  .missing-skills-list li {
+    margin-bottom: 10px; /* Razmak između stavki */
+  }
+  
+  .missing-skills-list label {
+    cursor: pointer; /* Poboljšava UX za checkbox */
+  }
+  
+
+
+  

@@ -10,13 +10,14 @@ export default function Header3() {
         <div className="header2">
             {uloga === "zaposlenik" ? (
                 <div className="linksContainer">
-                    <Link to="/ocjenjivanje" className="links">Uredi profil</Link>
+                    <Link to="/editProfile" className="links">Uredi profil</Link>
                 </div>
             ) :
             (
                 <div className="linksContainer">
                     <Link to="/editProfile" className="links">Uredi profil</Link>
-                    <Link to="/listOfEmployees" className="links">Odaberi željeni karijerni put</Link>
+                    <Link to="/employeeLevel" className="links">Odaberi željeni karijerni put</Link>
+                    <Link to="/addComment" className="links">Dodaj komentar</Link>
                 </div>
             )}      
         </div>

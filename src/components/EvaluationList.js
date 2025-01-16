@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./List.css";
 import axios from "axios";
 
-export default class List extends Component {
+export default class EvaluationList extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -79,14 +79,14 @@ export default class List extends Component {
     const pagination = this.getPagination();
 
     return (
-      <div className="list-container">
+      <div className="list-container" style={{ top: "25%", left:"10vw" }}>
         <div className="employee-list">
           {currentEmployees.map((employee, index) => (
             <div
               key={index}
               className={`employee-box ${index % 2 === 0 ? "even" : "odd"}`}
             >
-              <Link to="/employee" onClick={() => this.handleClick(employee.id)}>
+              <Link to="/evaluation" onClick={() => this.handleClick(employee.id)}>
                 <span className="employee-name">{employee.ime} {employee.prezime}</span>
               </Link>
               <span className="employee-level">{employee.ime}</span>

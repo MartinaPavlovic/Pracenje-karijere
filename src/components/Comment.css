@@ -1,0 +1,35 @@
+.comments {
+    position: relative;
+    text-align: center;
+}
+
+.comments-section {
+    position: relative;
+    margin-top: 20vh;
+    background-color: #f9f9f9;
+    width: 60%;
+    left: 17vw;
+    padding: 10px; /* dodano za razmak unutar sekcije */
+}
+
+textarea {
+    width: 80%;  /* Koristimo 100% širine roditeljskog elementa */
+    font-size: 1.4rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    resize: vertical; /* Omogućava vertikalno proširivanje textarea */
+}
+
+.save-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #45a049;
+}

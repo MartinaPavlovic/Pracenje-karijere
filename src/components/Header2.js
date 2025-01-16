@@ -11,12 +11,12 @@ export default function Header2() {
         <div className="header2">
             {uloga === "zaposlenik" ? (
                 <div className="linksContainer">
-                    <Link to="/ocjenjivanje" className="links">Ocjenjivanje</Link>
+                    <Link to="/evaluationList" className="links">Ocjenjivanje</Link>
                 </div>
             ) :
             (
                 <div className="linksContainer">
-                    <Link to="/ocjenjivanje" className="links">Ocjenjivanje</Link>
+                    <Link to="/evaluationList" className="links">Ocjenjivanje</Link>
                     <Link to="/listOfEmployees" className="links">Popis zaposlenika</Link>
                 </div>
             )}            

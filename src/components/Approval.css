@@ -1,0 +1,73 @@
+.approval {
+    text-align: center;
+}
+
+.nameText {
+    position: relative;
+    top: 5vh;
+    font-size: 5vh;
+    font-style: italic;
+}
+
+.hr1 {
+    position: relative;
+    top: 5vh;
+    width: 30%;
+    margin: 2rem auto;
+}
+
+.skills-list2 {
+    position: relative;
+    top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dva stupca */
+    gap: 1rem; /* Razmak između stavki */
+    list-style: none; /* Uklanja defaultne stilove liste */
+    width: 70%; 
+    left: 5%;
+}
+
+.skills-list2 li {
+    position: relative;
+    display: flex; /* Postavlja kružić i tekst u liniju */
+    align-items: center; /* Vertikalno centriranje */
+    font-size: 1.6rem; /* Veličina teksta */
+    color: #333;
+    padding: 0.5rem; /* Unutarnji razmak stavke */
+    left: 20vw;
+}
+
+.skills-list2 li::before {
+    content: '○'; /* Simbol praznog kružića */
+    font-size: 1.5rem; /* Veličina kružića */
+    color: #333; /* Boja kružića */
+    margin-right: 10px; /* Razmak između kružića i teksta */
+}
+
+input[type="number"] {
+    font-size: 1.2rem;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50px;
+  }
+  
+.approve-btn,
+.edit-btn {
+    position: relative;
+    top: 15vh;
+    font-size: 1.6rem;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+  
+.approve-btn:hover,
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+  

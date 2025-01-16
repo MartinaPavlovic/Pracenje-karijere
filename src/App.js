@@ -6,6 +6,12 @@ import DepartmentPage from './pages/DepartmentPage';
 import ListOfEmployees from './pages/ListOfEmployees';
 import EmployeePage from './pages/EmployeePage';
 import EditProfilePage from './pages/EditProfilePage';
+import EmployeeLevelPage from './pages/EmployeeLevelPage';
+import CommentPage from './pages/CommentPage';
+import EvaluationListPage from './pages/EvaluationListPage';
+import RequestList from './pages/RequestListPage';
+import EvaluationPage from './pages/EvaluationPage';
+import ApprovalPage from './pages/ApprovalPage';
 
 function App() {
   return (
@@ -17,6 +23,12 @@ function App() {
         <Route path="/listOfEmployees" element={<ListOfEmployees />} />
         <Route path="/employee" element={<EmployeePage />} />
         <Route path="/editProfile" element={<EditProfilePage />} />
+        <Route path="/employeeLevel" element={<EmployeeLevelPage />} />
+        <Route path="/addComment" element={<CommentPage />} />
+        <Route path="/evaluationList" element={<EvaluationListPage />} />
+        <Route path="/requestList" element={<RequestList />} />
+        <Route path="/evaluation" element={<EvaluationPage />} />
+        <Route path="/approval" element={<ApprovalPage />} />
       </Routes>
     </Router>
   );
