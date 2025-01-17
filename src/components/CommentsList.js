@@ -6,18 +6,30 @@ export default class CommentsList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      commentsData: [], // Država za spremanje komentara
+      commentsData: [],
     };
-    this.korisnikId = 3; // ID korisnika za API poziv
   }
 
   componentDidMount() {
+
+    // kada promjenimo api pozive, korisniId vise nece trebati, vec samo token
+    const korisnikId  = localStorage.getItem("korisnikId");
+    if(!korisnikId) {
+      console.error("User ID not available.");
+      return;
+    };
+    
     console.log("Fetching comments data...");
     axios
-      .get(`/api/komentar/korisnik/${this.korisnikId}`) // API poziv za komentare
+      .get(`/api/komentar/korisnik/${korisnikId}`, {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      }
+      )
       .then((res) => {
         console.log("API Response (commentsData):", res.data);
-        this.setState({ commentsData: res.data }); // Spremanje podataka u state
+        this.setState({ commentsData: res.data });
       })
       .catch((err) => {
         console.error("Error fetching commentsData:", err);
@@ -37,7 +49,7 @@ export default class CommentsList extends Component {
             </div>
           ))
         ) : (
-          <p>Nema dostupnih komentara.</p> // Poruka za slučaj da nema komentara
+          <p>Nema dostupnih komentara.</p>
         )}
       </div>
     );
